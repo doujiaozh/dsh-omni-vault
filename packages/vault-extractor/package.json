@@ -1,0 +1,11 @@
+{
+  "name": "@omni-vault/extractor",
+  "version": "1.0.0",
+  "description": "Omni-Vault logic extractor: @vault AST scanner, secret string lifting, hand-rolled WebAssembly bytecode emission, token provisioning and thin-shell generation.",
+  "type": "module",
+  "main": "src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "license": "MIT"
+}

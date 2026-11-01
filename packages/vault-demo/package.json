@@ -1,0 +1,17 @@
+{
+  "name": "@omni-vault/demo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "description": "Omni-Vault end-to-end demo: billing core lifted to the cloud, thin shell locally, and the reverser that fails to reverse it.",
+  "scripts": {
+    "extract": "node --experimental-strip-types src/run-extract.ts",
+    "demo": "node --experimental-strip-types src/demo.ts",
+    "reverser": "node --experimental-strip-types src/reverser.ts"
+  },
+  "dependencies": {
+    "@omni-vault/extractor": "file:../vault-extractor",
+    "@omni-vault/security": "file:../vault-security"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "dsh-omni-vault",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Omni-Vault: zero-knowledge execution architecture. Core logic never ships to the client.",
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "extract": "node --experimental-strip-types packages/vault-demo/src/run-extract.ts",
+    "demo": "node --experimental-strip-types packages/vault-demo/src/demo.ts",
+    "reverser": "node --experimental-strip-types packages/vault-demo/src/reverser.ts",
+    "selfcheck": "node --experimental-strip-types packages/vault-extractor/src/wasm-selfcheck.ts && node --experimental-strip-types packages/vault-extractor/src/extractor-selfcheck.ts",
+    "serve": "node --experimental-strip-types packages/vault-demo/demo-gen/cloud/vault-server.ts",
+    "build": "tsc -p tsconfig.json",
+    "clean": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\""
+  },
+  "keywords": [
+    "anti-reverse-engineering",
+    "zero-knowledge",
+    "wasm",
+    "ecdh",
+    "code-protection",
+    "serverless"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.16"
+  }
+}

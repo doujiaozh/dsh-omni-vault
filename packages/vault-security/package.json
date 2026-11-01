@@ -1,0 +1,11 @@
+{
+  "name": "@omni-vault/security",
+  "version": "1.0.0",
+  "description": "Omni-Vault security core: X25519-ECDH handshake, Ed25519-pinned signatures, AES-256-GCM sessions, bearer tokens, anti-debug and self-integrity.",
+  "type": "module",
+  "main": "src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "license": "MIT"
+}
