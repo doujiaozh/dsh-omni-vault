@@ -11,3 +11,25 @@ packages/vault-demo/demo-gen/
 # Local server logs / self-check artifacts
 *.err
 packages/vault-extractor/pricing.wasm
+Thumbs.db
+desktop.ini
+*.tmp
+*.bak
+*.swp
+*.exe
+.env
+.env.*
+!.env.example
+.idea/
+.vscode/
+*.iml
+dist/
+build/
+out/
+.next/
+coverage/
+*.tsbuildinfo
+.npm/
+.pnpm-store/
+yarn-error.log
+*.tgz
